@@ -45,10 +45,8 @@ const Hero = () => {
                             <h1 className="mt-2 hidden md:inline" dangerouslySetInnerHTML={{__html: highlight.description}} />
                             <hr className="mt-4 border-gray-400 hidden md:inline" />
                             <div className="flex justify-between mt-2">
-                                <div className="hidden md:inline">
-                                    <h1 className="text-sm">{highlight.author}</h1>
-                                    <Link to={`/detail/${highlight.id}`}><h1 className="text-xs text-blue-900 text-right">Read Mores</h1></Link>
-                                </div>
+                                    <h1 className="text-sm hidden md:inline">{highlight.author}</h1>
+                                    <Link to={`/detail/${highlight.id}`}><h1 className="text-xs text-blue-900 text-right hidden md:inline">Read Mores</h1></Link>
                             </div>
                         </div>
                     )
@@ -89,10 +87,8 @@ const Hero = () => {
                             <h1 className=" mt-5 text-sm text-justify hidden md:inline" dangerouslySetInnerHTML={{__html: littleHighlight.description}} />
                             <hr className="mt-5 border-gray-400" />
                             <div className="flex justify-between mt-3">
-                                <div className="hidden md:inline">
-                                    <h1 className="text-sm">{littleHighlight.author}</h1>
-                                    <h1 className="text-xs text-blue-900 text-right">{littleHighlight.publishedAt}</h1>
-                                </div>
+                                    <h1 className="text-sm hidden md:inline">{littleHighlight.author}</h1>
+                                    <h1 className="text-xs text-blue-900 text-right hidden md:inline">{littleHighlight.publishedAt}</h1>
                             </div>
                         </div>
                         )
